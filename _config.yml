@@ -1,0 +1,7 @@
+title: Karpat Solutions
+description: Simulation & Computational Engineering Consultant | CAD • CFD • FEA • Algorithms
+baseurl: "" # leave empty for root
+url: "https://karpat-solutions.ca" # your custom domain
+remote_theme: y7kim/agency-jekyll-theme
+plugins:
+  - jekyll-remote-theme
