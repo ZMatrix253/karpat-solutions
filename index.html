@@ -2,19 +2,53 @@
 layout: default
 ---
 
-<div class="home">
+<!-- Hero Section -->
+<section id="hero" style="text-align:center; padding: 100px 20px;">
+  <h1>Karpat Solutions</h1>
+  <h2>Simulation & Computational Engineering Consulting</h2>
+  <p>Helping businesses optimize performance through advanced CAD, CFD, FEA, and algorithm development.</p>
+  <a href="mailto:zoltan.marton@karpatsolutions.ca" class="btn btn-primary">Contact Me</a>
+</section>
 
-  <h1>Posts</h1>
+<!-- About Section -->
+<section id="about" style="padding: 60px 20px;">
+  <h3>About</h3>
+  <p>
+    I'm <strong>Zoltan Marton</strong>, a Simulation & Computational Engineering Consultant specializing in 
+    <strong>CAD, CFD, FEA, and custom algorithm development</strong>. I help companies solve complex 
+    engineering problems using precision simulation and computational optimization.
+  </p>
+</section>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
+<!-- Services Section -->
+<section id="services" style="padding: 60px 20px;">
+  <h3>Core Services</h3>
+  <ul>
+    <li>✔️ Simulation & computational model development</li>
+    <li>✔️ CAD design and optimization</li>
+    <li>✔️ CFD (Computational Fluid Dynamics)</li>
+    <li>✔️ FEA (Finite Element Analysis)</li>
+    <li>✔️ Custom engineering algorithms</li>
+    <li>✔️ Technical consulting & R&D support</li>
   </ul>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!-- Portfolio / Case Studies -->
+<section id="portfolio" style="padding: 60px 20px;">
+  <h3>Sample Projects</h3>
+  <p>More coming soon.</p>
+  <ul>
+    <li>🔧 Turbine flow simulation (CFD)</li>
+    <li>🏗️ Structural optimization using FEA</li>
+    <li>📊 Algorithm development for control systems</li>
+  </ul>
+</section>
 
-</div>
+<!-- Contact -->
+<section id="contact" style="text-align:center; padding: 80px 20px;">
+  <h3>Let’s Work Together</h3>
+  <p>Email: <a href="mailto:zoltan.marton@karpatsolutions.ca">zoltan.marton@karpatsolutions.ca</a></p>
+  <p>Location: Ottawa, ON, Canada</p>
+  <a href="mailto:zoltan.marton@karpatsolutions.ca" class="btn btn-primary">Request Consultation</a>
+</section>
+
