@@ -1,5 +1,4 @@
-/* Strong override for navbar brand font */
-.navbar-default .navbar-brand {
+nav.navbar-default .navbar-brand {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 700 !important;
 }
