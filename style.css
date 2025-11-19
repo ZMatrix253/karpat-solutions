@@ -1,3 +1,8 @@
----
-layout: style
----
+/* Custom styles for navbar brand */
+.navbar-default .navbar-brand {
+    font-family: 'Montserrat', sans-serif !important; /* Use Montserrat font */
+    font-weight: 700 !important;                       /* Bold text */
+    font-size: 24px !important;                        /* Adjust size */
+    color: #123456 !important;                         /* Replace with your desired color */
+    text-transform: none !important;                  /* Optional: prevent uppercase */
+}
