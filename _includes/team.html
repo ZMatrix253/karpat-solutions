@@ -13,24 +13,23 @@
         <div class="row">
             {% for member in site.people %}
             <div class="col-sm-4">
-                <div class="team-member">
+                <div class="team-member text-center">
                     <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="{{ member.name }}">
                     <h4>{{ member.name }}</h4>
                     <p class="text-muted">{{ member.position }}</p>
 
-                    <!-- Social Buttons (Font Awesome) -->
+                    <!-- Social Buttons (Font Awesome 6) -->
                     <div class="row text-center" style="margin-top: 15px;">
                         <ul class="social-buttons list-inline">
                             {% for network in member.social %}
-                                <li>
-                                    <a href="{{ network.url }}" target="_blank">
-                                        <i class="fa fa-{{ network.title | downcase }}"></i>
-                                    </a>
-                                </li>
+                            <li>
+                                <a href="{{ network.url }}" target="_blank">
+                                    <i class="fa-brands fa-{{ network.title | downcase }}" style="font-size: 24px;"></i>
+                                </a>
+                            </li>
                             {% endfor %}
                         </ul>
                     </div>
-
                 </div>
             </div>
             {% endfor %}
@@ -46,3 +45,4 @@
         </div>
     </div>
 </section>
+
