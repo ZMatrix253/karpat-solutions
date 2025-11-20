@@ -6,18 +6,12 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Custom CSS & Bootstrap Core CSS -->
+    <!-- Custom CSS & Bootstrap -->
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/custom.css" | prepend: site.baseurl }}">
 
-    <!-- 🚀 Use Font Awesome 6 (new icons including X/Twitter) -->
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TCTSC78IHkXP6grQHGXloQ==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer"
-    />
+    <!-- Self-hosted Font Awesome 6.6.0 – this is the one that finally works -->
+    <link rel="stylesheet" href="{{ "/css/all.min.css" | relative_url }}">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -26,7 +20,6 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet">
 
-    <!-- HTML5 Shim & Respond.js for IE8 -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
