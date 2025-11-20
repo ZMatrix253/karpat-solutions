@@ -12,12 +12,12 @@ people:
     pic: 1
     position: Founder / Consultant
     social:
-      - title: x
-        url: https://x.com/mart18786
       - title: linkedin-in
         url: https://www.linkedin.com/in/zoltanm1923901/
       - title: youtube
         url: https://www.youtube.com/@ZoltanMarton-KarpatSolutions
+      - title: x
+        url: https://x.com/mart18786
       - title: github
         url: https://github.com/ZMatrix253
 
