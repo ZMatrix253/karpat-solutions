@@ -1,57 +1,100 @@
 <!-- Team Section -->
-<section id="team" class="bg-light-gray">
-    <div class="container">
-        <!-- Section Header -->
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Our Amazing Team</h2>
-                <h3 class="section-subheading text-muted">Engineering simulation and consulting experts</h3>
-            </div>
-        </div>
-
-        <!-- Team Members -->
-        <div class="row">
-            {% for member in site.people %}
-            <div class="col-sm-4">
-                <div class="team-member text-center">
-                    <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="{{ member.name }}">
-                    <h4>{{ member.name }}</h4>
-                    <p class="text-muted">{{ member.position }}</p>
-
-                    <!-- Social Links (FA6 compatible) -->
-                    <ul class="list-inline social-buttons" style="margin-top: 20px;">
-                        {% for network in member.social %}
-                        <li class="list-inline-item">
-                            <a href="{{ network.url }}" target="_blank" title="{{ network.title | capitalize }}">
-                                {% elsif network.title == 'linkedin' or network.title == 'LinkedIn' %}
-                                    <i class="fab fa-linkedin-in"></i>
-                                {% elsif network.title == 'youtube' or network.title == 'YouTube' %}
-                                    <i class="fab fa-youtube"></i>
-                                {% if network.title == 'x' or network.title == 'X' %}
-                                    <i class="fab fa-x-twitter"></i>
-                                {% elsif network.title == 'github' or network.title == 'GitHub' %}
-                                    <i class="fab fa-github"></i>
-                                {% else %}
-                                    <i class="fab fa-{{ network.title | downcase }}"></i>
-                                {% endif %}
-                            </a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <!-- Description / Mission -->
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">
-                    Providing expert simulation and computational consulting for engineering projects across mechanical, biomedical, and aerospace fields.
-                </p>
-            </div>
-        </div>
+<section id="team" class="bg-light-gray py-5">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+        <h3 class="section-subheading text-muted">Engineering simulation and consulting experts</h3>
+      </div>
     </div>
+
+    <!-- Team Members Grid -->
+    <div class="row text-center">
+      {% for member in site.people %}
+      <div class="col-md-4 col-sm-6 mb-5">
+        <div class="team-member">
+          <img src="{{ 'img/team/' | append: member.pic | append: '.jpg' | relative_url }}"
+               class="mx-auto rounded-circle img-fluid"
+               alt="{{ member.name }}"
+               loading="lazy">
+
+          <h4 class="mt-4">{{ member.name }}</h4>
+          <p class="text-muted">{{ member.position }}</p>
+
+          <!-- Social Links – X/Twitter forced to 3rd position -->
+          {% if member.social and member.social.size > 0 %}
+          <ul class="list-inline social-buttons mt-4">
+            {% assign sorted_social = member.social | sort: 'title' %}
+            {% for network in sorted_social %}
+              {% assign title = network.title | downcase %}
+
+              <!-- Skip X/Twitter here – we'll add it manually in position 3 -->
+              {% if title == 'x' or title == 'twitter' %}
+                {% continue %}
+              {% endif %}
+
+              <li class="list-inline-item">
+                <a href="{{ network.url }}" target="_blank" rel="noopener"
+                   aria-label="{{ network.title | capitalize }}">
+                  {% assign icon_name = title %}
+                  {% if title == 'linkedin' %}{% assign icon_name = 'linkedin-in' %}{% endif %}
+                  {% if title == 'youtube' %}{% assign icon_name = 'youtube' %}{% endif %}
+                  {% if title == 'github' %}{% assign icon_name = 'github' %}{% endif %}
+                  <i class="fab fa-{{ icon_name }}"></i>
+                </a>
+              </li>
+
+              <!-- Insert X/Twitter exactly in 3rd position if it exists -->
+              {% if forloop.index == 2 and member.social contains 'title:x' or member.social contains 'title:X' or member.social contains 'title:twitter' or member.social contains 'title:Twitter' %}
+                {% for net in member.social %}
+                  {% if net.title == 'x' or net.title == 'X' or net.title == 'twitter' or net.title == 'Twitter' %}
+                  <li class="list-inline-item">
+                    <a href="{{ net.url }}" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                      <i class="fab fa-x-twitter"></i>
+                    </a>
+                  </li>
+                  {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+
+            <!-- If X/Twitter wasn't inserted yet (i.e. there were < 2 other networks), add it at the end of the list -->
+            {% assign x_added = false %}
+            {% for net in member.social %}
+              {% if net.title == 'x' or net.title == 'X' or net.title == 'twitter' or net.title == 'Twitter' %}
+                {% assign x_added = true %}
+              {% endif %}
+            {% endfor %}
+            {% if x_added == false and (member.social | map: 'title' | map: 'downcase' | contains: 'x' or member.social | map: 'title' | map: 'downcase' | contains: 'twitter') %}
+              {% for net in member.social %}
+                {% if net.title == 'x' or net.title == 'X' or net.title == 'twitter' or net.title == 'Twitter' %}
+                <li class="list-inline-item">
+                  <a href="{{ net.url }}" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                </li>
+                {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Team Description -->
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="large text-muted">
+          Providing expert simulation and computational consulting for engineering projects across mechanical, biomedical, and aerospace fields.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
 
