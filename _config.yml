@@ -12,10 +12,14 @@ people:
     pic: 1
     position: Founder / Consultant
     social:
-      - title: x-twitter          # Font Awesome 6 icon for X/Twitter
+      - title: x          # Font Awesome 6 brand icon for X/Twitter
         url: https://x.com/mart18786
-      - title: linkedin           # lowercase for FA6
+      - title: linkedin   # Font Awesome 6 brand icon for LinkedIn
         url: https://www.linkedin.com/in/zoltanm1923901/
+      - title: youtube    # Font Awesome 6 brand icon for YouTube
+        url: https://www.youtube.com/@ZoltanMarton-KarpatSolutions
+      - title: github     # Font Awesome 6 brand icon for GitHub
+        url: https://github.com/ZMatrix253
 
 # Footer / general social links
 social:
@@ -23,12 +27,12 @@ social:
     url: https://www.linkedin.com/in/zoltanm1923901
   - title: youtube
     url: https://www.youtube.com/@ZoltanMarton-KarpatSolutions
-  - title: x-twitter             # Font Awesome 6 icon
+  - title: x
     url: https://x.com/mart18786
   - title: github
     url: https://github.com/ZMatrix253
 
-# Postal address (add as many lines as necessary)
+# Postal address
 address:
   - line: Ottawa, ON, Canada
 
