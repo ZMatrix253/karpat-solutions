@@ -13,26 +13,26 @@
         <div class="row">
             {% for member in site.people %}
             <div class="col-sm-4">
-                <div class="team-member">
+                <div class="team-member text-center">
                     <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="{{ member.name }}">
                     <h4>{{ member.name }}</h4>
                     <p class="text-muted">{{ member.position }}</p>
 
-                    <!-- Social Links (FA 4.5 compatible) -->
-                    <ul class="list-inline social-buttons">
+                    <!-- Social Links (FA6 compatible) -->
+                    <ul class="list-inline social-buttons" style="margin-top: 20px;">
                         {% for network in member.social %}
-                        <li>
-                            <a href="{{ network.url }}">
+                        <li class="list-inline-item">
+                            <a href="{{ network.url }}" target="_blank" title="{{ network.title | capitalize }}">
                                 {% if network.title == 'x' or network.title == 'X' %}
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="fab fa-x-twitter"></i>
                                 {% elsif network.title == 'linkedin' or network.title == 'LinkedIn' %}
-                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fab fa-linkedin-in"></i>
                                 {% elsif network.title == 'youtube' or network.title == 'YouTube' %}
-                                    <i class="fa fa-youtube-play"></i>
+                                    <i class="fab fa-youtube"></i>
                                 {% elsif network.title == 'github' or network.title == 'GitHub' %}
-                                    <i class="fa fa-github"></i>
+                                    <i class="fab fa-github"></i>
                                 {% else %}
-                                    <i class="fa fa-{{ network.title | downcase }}"></i>
+                                    <i class="fab fa-{{ network.title | downcase }}"></i>
                                 {% endif %}
                             </a>
                         </li>
