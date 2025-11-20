@@ -1,6 +1,7 @@
 <!-- Team Section -->
 <section id="team" class="bg-light-gray">
     <div class="container">
+        <!-- Section Header -->
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Our Amazing Team</h2>
@@ -8,29 +9,21 @@
             </div>
         </div>
 
+        <!-- Team Members -->
         <div class="row">
             {% for member in site.people %}
             <div class="col-sm-4">
-                <div class="team-member text-center">
+                <div class="team-member">
                     <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="{{ member.name }}">
                     <h4>{{ member.name }}</h4>
                     <p class="text-muted">{{ member.position }}</p>
 
-                    <ul class="list-inline social-buttons" style="margin-top: 20px;">
+                    <!-- Social Links (FA 4.5 compatible) -->
+                    <ul class="list-inline social-buttons">
                         {% for network in member.social %}
-                        <li class="list-inline-item">
-                            <a href="{{ network.url }}" target="_blank" class="btn btn-dark btn-social" title="{{ network.title | capitalize }}">
-                                {% if network.title == 'x' or network.title == 'X' %}
-                                    <i class="fab fa-x-twitter"></i>
-                                {% elsif network.title == 'linkedin' or network.title == 'LinkedIn' %}
-                                    <i class="fab fa-linkedin-in"></i>
-                                {% elsif network.title == 'youtube' or network.title == 'YouTube' %}
-                                    <i class="fab fa-youtube"></i>
-                                {% elsif network.title == 'github' or network.title == 'GitHub' %}
-                                    <i class="fab fa-github"></i>
-                                {% else %}
-                                    <i class="fab fa-{{ network.title | downcase }}"></i>
-                                {% endif %}
+                        <li>
+                            <a href="{{ network.url }}">
+                                <i class="fa fa-{{ network.title | downcase }}"></i>
                             </a>
                         </li>
                         {% endfor %}
@@ -40,8 +33,9 @@
             {% endfor %}
         </div>
 
+        <!-- Description / Mission -->
         <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
                 <p class="large text-muted">
                     Providing expert simulation and computational consulting for engineering projects across mechanical, biomedical, and aerospace fields.
                 </p>
@@ -49,3 +43,4 @@
         </div>
     </div>
 </section>
+
