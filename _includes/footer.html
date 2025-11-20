@@ -6,17 +6,40 @@
                     &copy; {{ site.title }} {{ 'now' | date: "%Y" }}
                 </span>
             </div>
+
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
                     {% for network in site.social %}
-                    <li>
-                        <a href="{{ network.url }}" target="_blank">
-                            <i class="fab fa-{{ network.title | downcase }}"></i>
-                        </a>
-                    </li>
+                        <li class="list-inline-item">
+                            <a href="{{ network.url }}" target="_blank" class="btn btn-dark btn-social mx-2" title="{{ network.title }}">
+                                {% comment %}
+                                    Font Awesome 6 renamed these two icons:
+                                    • Twitter/X    → fa-x-twitter
+                                    • LinkedIn     → fa-linkedin-in
+                                {% endcomment %}
+
+                                {% if network.title == 'Twitter' or network.title == 'X' or network.title == 'x-twitter' %}
+                                    <i class="fab fa-x-twitter"></i>
+
+                                {% elsif network.title == 'LinkedIn' or network.title == 'linkedin' %}
+                                    <i class="fab fa-linkedin-in"></i>
+
+                                {% elsif network.title == 'YouTube' or network.title == 'youtube' %}
+                                    <i class="fab fa-youtube"></i>
+
+                                {% elsif network.title == 'GitHub' or network.title == 'github' %}
+                                    <i class="fab fa-github"></i>
+
+                                {% else %}
+                                    <!-- fallback for any other platform -->
+                                    <i class="fab fa-{{ network.title | downcase }}"></i>
+                                {% endif %}
+                            </a>
+                        </li>
                     {% endfor %}
                 </ul>
             </div>
+
             <div class="col-md-4">
                 <ul class="list-inline quicklinks">
                     <li><a href="#">Privacy Policy</a></li>
