@@ -1,40 +1,41 @@
 url: https://karpatsolutions.ca
-baseurl: ""
+baseurl:
 
 # Site settings
-title: Karpat Solutions
+title:  Karpat Solutions
 email: zoltan.marton@karpatsolutions.ca
 description: "Simulation & Computational Engineering Consultant | CAD • CFD • FEA • Algorithms"
 
-# Team members
-people:
-  - name: Zoltan Marton
-    pic: 1
-    position: Founder / Consultant
-    social:
-      - title: x            # Font Awesome 6 brand icon for X/Twitter
-        url: https://x.com/mart18786
-      - title: linkedin     # Font Awesome 6 brand icon for LinkedIn
-        url: https://www.linkedin.com/in/zoltanm1923901/
-      - title: youtube      # Font Awesome 6 brand icon for YouTube
-        url: https://www.youtube.com/@ZoltanMarton-KarpatSolutions
-      - title: github       # Font Awesome 6 brand icon for GitHub
-        url: https://github.com/ZMatrix253
 
-# Footer / general social links
+# Team names, titles and social links
+people:
+- name: Zoltan Marton
+  pic: 1
+  position: Founder / Consultant
+  social:
+    - title: X
+      url: https://x.com/mart18786
+    - title: Linkedin
+      url: https://www.linkedin.com/in/zoltanm1923901/
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: linkedin
-    url: https://www.linkedin.com/in/zoltanm1923901/
+    url: https://www.linkedin.com/in/zoltanm1923901
   - title: youtube
     url: https://www.youtube.com/@ZoltanMarton-KarpatSolutions
-  - title: x
+  - title: twitter
     url: https://x.com/mart18786
   - title: github
     url: https://github.com/ZMatrix253
 
-# Postal address
+# Postal address (add as many lines as necessary)
 address:
   - line: Ottawa, ON, Canada
+
+# Build settings
+markdown: kramdown
+permalink: pretty
 
 # Build settings
 markdown: kramdown
