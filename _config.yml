@@ -13,10 +13,14 @@ people:
   pic: 1
   position: Founder / Consultant
   social:
-    - title: X
+    - title: twitter
       url: https://x.com/mart18786
-    - title: Linkedin
+    - title: linkedin
       url: https://www.linkedin.com/in/zoltanm1923901/
+    - title: youtube
+      url: https://www.youtube.com/@ZoltanMarton-KarpatSolutions
+    - title: github
+      url: https://github.com/ZMatrix253
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
