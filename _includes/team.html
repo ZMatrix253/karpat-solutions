@@ -18,7 +18,6 @@
                     <h4>{{ member.name }}</h4>
                     <p class="text-muted">{{ member.position }}</p>
 
-<<<<<<< HEAD
                     <!-- Social Buttons – Fixed for FA6 -->
                     <ul class="list-inline social-buttons" style="margin-top: 20px;">
                         {% for network in member.social %}
@@ -39,20 +38,6 @@
                         </li>
                         {% endfor %}
                     </ul>
-=======
-                    <!-- Social Buttons (Font Awesome 6) -->
-                    <div class="row text-center" style="margin-top: 15px;">
-                        <ul class="social-buttons list-inline">
-                            {% for network in member.social %}
-                            <li>
-                                <a href="{{ network.url }}" target="_blank">
-                                    <i class="fab fa-{{ network.title | downcase }}" style="font-size: 24px;"></i>
-                                </a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
->>>>>>> parent of 98d410b (Update team.html)
                 </div>
             </div>
             {% endfor %}
@@ -60,7 +45,7 @@
 
         <!-- Section Footer Text -->
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
+            <div class="col-lg-8 mx-auto text-center">
                 <p class="large text-muted">
                     Providing expert simulation and computational consulting for engineering projects across mechanical, biomedical, and aerospace fields.
                 </p>
