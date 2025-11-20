@@ -18,20 +18,14 @@
                     <h4>{{ member.name }}</h4>
                     <p class="text-muted">{{ member.position }}</p>
 
-                    <!-- Social Buttons (like About Section) -->
-                    <div class="row text-center" style="margin-top: 20px;">
+                    <!-- Social Buttons (Font Awesome Only) -->
+                    <div class="row text-center" style="margin-top: 15px;">
                         <ul class="social-buttons list-inline">
                             {% for network in member.social %}
                                 <li>
-                                    {% if network.title | downcase == "x" %}
-                                        <a href="{{ network.url }}" target="_blank">
-                                            <img src="img/icons/X-logo.svg" alt="X" style="width:24px; height:24px;">
-                                        </a>
-                                    {% else %}
-                                        <a href="{{ network.url }}" target="_blank">
-                                            <i class="fa fa-{{ network.title | downcase }}"></i>
-                                        </a>
-                                    {% endif %}
+                                    <a href="{{ network.url }}" target="_blank">
+                                        <i class="fa fa-{{ network.title | downcase }}"></i>
+                                    </a>
                                 </li>
                             {% endfor %}
                         </ul>
@@ -52,4 +46,3 @@
         </div>
     </div>
 </section>
-
