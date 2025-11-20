@@ -1,6 +1,29 @@
+/* ──────── CUSTOM STYLES ──────── */
+
+/* Your existing brand font (keep it) */
 nav.navbar-default .navbar-header .navbar-brand {
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 700 !important;
 }
 
+/* NEW: Force black navbar at all times (desktop + mobile) */
+#mainNav {
+    background-color: #000000 !important;
+    transition: none !important;            /* removes the transparent → colored fade on scroll */
+}
 
+#mainNav.navbar-shrink {
+    background-color: #000000 !important;   /* makes sure it stays black even after scrolling */
+}
+
+/* Make text and links readable on black */
+#mainNav .navbar-brand,
+#mainNav .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+/* Optional: make active/hover links your brand blue instead of default gray */
+#mainNav .navbar-nav .nav-link:hover,
+#mainNav .navbar-nav .nav-link.active {
+    color: #0056D2 !important;   /* your primary blue from the config */
+}
