@@ -6,6 +6,19 @@ nav.navbar-default .navbar-header .navbar-brand {
     font-weight: 700 !important;
 }
 
+/* Perfectly center your logo vertically in the black navbar */
+.navbar-brand img {
+    margin-top: -8px !important;   /* move logo up – try -6 to -12 */
+    height: 56px !important;       /* optional bigger size on load */
+}
+
+@media (min-width: 768px) {
+    .navbar-shrink .navbar-brand img {
+        margin-top: -6px !important;   /* slightly less lift when scrolled */
+        height: 48px !important;       /* slightly smaller when scrolled */
+    }
+}
+
 /* NEW: Force black navbar at all times (desktop + mobile) */
 #mainNav {
     background-color: #000000 !important;
