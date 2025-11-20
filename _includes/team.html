@@ -14,71 +14,37 @@
       {% for member in site.people %}
       <div class="col-md-4 col-sm-6 mb-5">
         <div class="team-member">
-          <img src="{{ 'img/team/' | append: member.pic | append: '.jpg' | relative_url }}"
-               class="mx-auto rounded-circle img-fluid"
-               alt="{{ member.name }}"
+          <img src="{{ 'img/team/' | append: member.pic | append: '.jpg' | relative_url }}" 
+               class="mx-auto rounded-circle img-fluid" 
+               alt="{{ member.name }}" 
                loading="lazy">
 
           <h4 class="mt-4">{{ member.name }}</h4>
           <p class="text-muted">{{ member.position }}</p>
 
-          <!-- Social Links – X/Twitter forced to 3rd position -->
+          <!-- Social Links -->
           {% if member.social and member.social.size > 0 %}
           <ul class="list-inline social-buttons mt-4">
-            {% assign sorted_social = member.social | sort: 'title' %}
-            {% for network in sorted_social %}
-              {% assign title = network.title | downcase %}
-
-              <!-- Skip X/Twitter here – we'll add it manually in position 3 -->
-              {% if title == 'x' or title == 'twitter' %}
-                {% continue %}
-              {% endif %}
-
-              <li class="list-inline-item">
-                <a href="{{ network.url }}" target="_blank" rel="noopener"
-                   aria-label="{{ network.title | capitalize }}">
-                  {% assign icon_name = title %}
-                  {% if title == 'linkedin' %}{% assign icon_name = 'linkedin-in' %}{% endif %}
-                  {% if title == 'youtube' %}{% assign icon_name = 'youtube' %}{% endif %}
-                  {% if title == 'github' %}{% assign icon_name = 'github' %}{% endif %}
-                  <i class="fab fa-{{ icon_name }}"></i>
-                </a>
-              </li>
-
-              <!-- Insert X/Twitter exactly in 3rd position if it exists -->
-              {% if forloop.index == 2 and member.social contains 'title:x' or member.social contains 'title:X' or member.social contains 'title:twitter' or member.social contains 'title:Twitter' %}
-                {% for net in member.social %}
-                  {% if net.title == 'x' or net.title == 'X' or net.title == 'twitter' or net.title == 'Twitter' %}
-                  <li class="list-inline-item">
-                    <a href="{{ net.url }}" target="_blank" rel="noopener" aria-label="X (Twitter)">
-                      <i class="fab fa-x-twitter"></i>
-                    </a>
-                  </li>
-                  {% break %}
-                  {% endif %}
-                {% endfor %}
-              {% endif %}
-            {% endfor %}
-
-            <!-- If X/Twitter wasn't inserted yet (i.e. there were < 2 other networks), add it at the end of the list -->
-            {% assign x_added = false %}
-            {% for net in member.social %}
-              {% if net.title == 'x' or net.title == 'X' or net.title == 'twitter' or net.title == 'Twitter' %}
-                {% assign x_added = true %}
-              {% endif %}
-            {% endfor %}
-            {% if x_added == false and (member.social | map: 'title' | map: 'downcase' | contains: 'x' or member.social | map: 'title' | map: 'downcase' | contains: 'twitter') %}
-              {% for net in member.social %}
-                {% if net.title == 'x' or net.title == 'X' or net.title == 'twitter' or net.title == 'Twitter' %}
-                <li class="list-inline-item">
-                  <a href="{{ net.url }}" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            {% for network in member.social %}
+            <li class="list-inline-item">
+              <a href="{{ network.url }}" target="_blank" rel="noopener" 
+                 aria-label="{{ network.title | capitalize }}">
+                {% assign icon_name = network.title | downcase %}
+                {% case icon_name %}
+                  {% when 'linkedin' %}
+                    <i class="fab fa-linkedin-in"></i>
+                  {% when 'youtube' %}
+                    <i class="fab fa-youtube"></i>
+                  {% when 'x', 'twitter' %}
                     <i class="fab fa-x-twitter"></i>
-                  </a>
-                </li>
-                {% break %}
-                {% endif %}
-              {% endfor %}
-            {% endif %}
+                  {% when 'github' %}
+                    <i class="fab fa-github"></i>
+                  {% else %}
+                    <i class="fab fa-{{ icon_name }}"></i>
+                {% endcase %}
+              </a>
+            </li>
+            {% endfor %}
           </ul>
           {% endif %}
         </div>
@@ -96,6 +62,3 @@
     </div>
   </div>
 </section>
-
-
-
