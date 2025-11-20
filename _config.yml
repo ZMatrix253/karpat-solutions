@@ -1,30 +1,29 @@
 url: https://karpatsolutions.ca
-baseurl:
+baseurl: ""
 
 # Site settings
-title:  Karpat Solutions
+title: Karpat Solutions
 email: zoltan.marton@karpatsolutions.ca
 description: "Simulation & Computational Engineering Consultant | CAD • CFD • FEA • Algorithms"
 
-
-# Team names, titles and social links
+# Team members
 people:
-- name: Zoltan Marton
-  pic: 1
-  position: Founder / Consultant
-  social:
-    - title: X
-      url: https://x.com/mart18786
-    - title: Linkedin
-      url: https://www.linkedin.com/in/zoltanm1923901/
+  - name: Zoltan Marton
+    pic: 1
+    position: Founder / Consultant
+    social:
+      - title: x-twitter          # Font Awesome 6 icon for X/Twitter
+        url: https://x.com/mart18786
+      - title: linkedin           # lowercase for FA6
+        url: https://www.linkedin.com/in/zoltanm1923901/
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Footer / general social links
 social:
   - title: linkedin
     url: https://www.linkedin.com/in/zoltanm1923901
   - title: youtube
     url: https://www.youtube.com/@ZoltanMarton-KarpatSolutions
-  - title: twitter
+  - title: x-twitter             # Font Awesome 6 icon
     url: https://x.com/mart18786
   - title: github
     url: https://github.com/ZMatrix253
@@ -36,3 +35,4 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
