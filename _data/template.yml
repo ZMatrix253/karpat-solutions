@@ -1,12 +1,11 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 0056D2 
-  secondary: #007BFF    
-  secondary-dark: 333
-  muted: 777
+  primary: ffffff        # Logo + all navbar text = pure white
+  secondary: 0056D2      # Buttons + accents only
+  hover: 007BFF          # Hover colour (used only on links/buttons)
+  background: 000000     # Forces navbar + header to pure black
 
 # Font Families
 font:
-  primary: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif'
-  secondary: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
-
+  primary: 'Bebas Neue', Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+  secondary: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif
