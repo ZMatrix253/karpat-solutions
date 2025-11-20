@@ -40,3 +40,21 @@ nav.navbar-default .navbar-header .navbar-brand {
 #mainNav .navbar-nav .nav-link.active {
     color: #0056D2 !important;   /* your primary blue from the config */
 }
+
+/* MOBILE: Force black navbar + perfect logo position on phones */
+@media (max-width: 767px) {
+    .navbar-default {
+        background-color: #000000 !important;   /* black even when collapsed */
+    }
+    
+    .navbar-brand img {
+        height: 44px !important;       /* nice size on mobile */
+        margin-top: -6px !important;    /* raises it perfectly */
+    }
+    
+    /* When you open the mobile menu – keep it black */
+    .navbar-collapse.in,
+    .navbar-collapse.collapsing {
+        background-color: #000000 !important;
+    }
+}
