@@ -16,6 +16,7 @@
                     <h4>{{ member.name }}</h4>
                     <p class="text-muted">{{ member.position }}</p>
 
+<<<<<<< HEAD
                     <ul class="list-inline social-buttons" style="margin-top: 20px;">
                         {% for network in member.social %}
                         <li class="list-inline-item">
@@ -35,6 +36,23 @@
                         </li>
                         {% endfor %}
                     </ul>
+=======
+                    <!-- Social Buttons (like About Section) -->
+                    <div class="text-center" style="margin-top: 10px;">
+                        {% for network in member.social %}
+                            {% if network.title == "twitter" %}
+                                <a href="{{ network.url }}" target="_blank">
+                                    <img src="img/icons/X-logo.svg" alt="X" style="width:24px; height:24px; margin: 0 5px;">
+                                </a>
+                            {% else %}
+                                <a href="{{ network.url }}" target="_blank">
+                                    <img src="img/icons/linkedin-logo.svg" alt="LinkedIn" style="width:24px; height:24px; margin: 0 5px;">
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+
+>>>>>>> parent of e908c9b (Update team.html)
                 </div>
             </div>
             {% endfor %}
@@ -49,3 +67,5 @@
         </div>
     </div>
 </section>
+
+
