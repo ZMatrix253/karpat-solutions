@@ -23,7 +23,17 @@
                         {% for network in member.social %}
                         <li>
                             <a href="{{ network.url }}">
-                                <i class="fa fa-{{ network.title | downcase }}"></i>
+                                {% if network.title == 'x' or network.title == 'X' %}
+                                    <i class="fa fa-twitter"></i>
+                                {% elsif network.title == 'linkedin' or network.title == 'LinkedIn' %}
+                                    <i class="fa fa-linkedin"></i>
+                                {% elsif network.title == 'youtube' or network.title == 'YouTube' %}
+                                    <i class="fa fa-youtube-play"></i>
+                                {% elsif network.title == 'github' or network.title == 'GitHub' %}
+                                    <i class="fa fa-github"></i>
+                                {% else %}
+                                    <i class="fa fa-{{ network.title | downcase }}"></i>
+                                {% endif %}
                             </a>
                         </li>
                         {% endfor %}
@@ -43,4 +53,3 @@
         </div>
     </div>
 </section>
-
