@@ -3,6 +3,7 @@ baseurl: ""
 
 # Site settings
 title: Karpat Solutions
+logo: "/img/karpat-logo.png"  
 email: zoltan.marton@karpatsolutions.ca
 description: "Simulation & Computational Engineering Consultant | CAD • CFD • FEA • Algorithms"
 
