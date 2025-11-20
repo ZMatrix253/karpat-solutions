@@ -1,16 +1,12 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: ffffff       # Pure white – used for "KARPAT" and "SOLUTIONS" text
-  primary-dark: e0e0e0  # Slightly off-white for subtle metallic glow (optional)
-  secondary: 0056D2     # Keep your existing blue if you use it elsewhere
-  secondary-dark: 333333
-  muted: 777777
-  background: 000000    # Deep black background like the original logo
+  primary: 0056D2 
+  secondary: #007BFF    
+  secondary-dark: 333
+  muted: 777
 
 # Font Families
 font:
-  heading: 'Bebas Neue', sans-serif                     # ← for "KARPAT" style
-  logo-primary: 'Bebas Neue', sans-serif                # Main logo word
-  logo-secondary: Montserrat, sans-serif                # "SOLUTIONS" subtitle
-  primary: Montserrat, sans-serif                       # Body / general text
-  secondary: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif
+  primary: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif'
+  secondary: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif'
+
