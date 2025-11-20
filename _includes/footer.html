@@ -1,44 +1,25 @@
 <footer>
-    <div class="container">
-        <div class="row">
-            <!-- Copyright -->
-            <div class="col-md-4">
-                <span class="copyright">
-                    © {{ site.title }} {{ 'now' | date: "%Y" }}
-                </span>
-            </div>
-
-            <!-- Social Buttons -->
-            <div class="col-md-4 text-center">
-                <ul class="list-inline social-buttons">
-                    {% for network in site.social %}
-                        <li class="list-inline-item">
-                            <a href="{{ network.url }}" target="_blank" class="btn btn-dark btn-social mx-2" title="{{ network.title | capitalize }}">
-                                {% comment %} Font Awesome 4.5 icons {% endcomment %}
-                                {% if network.title == 'x' or network.title == 'X' %}
-                                    <i class="fa fa-twitter"></i>
-                                {% elsif network.title == 'linkedin' or network.title == 'LinkedIn' %}
-                                    <i class="fa fa-linkedin"></i>
-                                {% elsif network.title == 'youtube' or network.title == 'YouTube' %}
-                                    <i class="fa fa-youtube-play"></i>
-                                {% elsif network.title == 'github' or network.title == 'GitHub' %}
-                                    <i class="fa fa-github"></i>
-                                {% else %}
-                                    <i class="fa fa-{{ network.title | downcase }}"></i>
-                                {% endif %}
-                            </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        {% for network in site.social %}
+                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
                         </li>
-                    {% endfor %}
-                </ul>
-            </div>
-
-            <!-- Quicklinks -->
-            <div class="col-md-4 text-right">
-                <ul class="list-inline quicklinks">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                </ul>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
