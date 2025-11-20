@@ -1,58 +1,66 @@
+{% comment %}
 <!-- Team Section -->
-<section id="team" class="bg-light-gray">
-    <div class="container">
-        <!-- Section Header -->
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Our Amazing Team</h2>
-                <h3 class="section-subheading text-muted">Engineering simulation and consulting experts</h3>
-            </div>
-        </div>
-
-        <!-- Team Members -->
-        <div class="row">
-            {% for member in site.people %}
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="{{ member.name }}">
-                    <h4>{{ member.name }}</h4>
-                    <p class="text-muted">{{ member.position }}</p>
-
-                    <!-- Social Links (FA 4.5 compatible) -->
-                    <ul class="list-inline social-buttons">
-                        {% for network in member.social %}
-                        <li>
-                            <a href="{{ network.url }}">
-                                {% if network.title == 'x' or network.title == 'X' %}
-                                    <i class="fa fa-twitter"></i>
-                                {% elsif network.title == 'linkedin' or network.title == 'LinkedIn' %}
-                                    <i class="fa fa-linkedin"></i>
-                                {% elsif network.title == 'youtube' or network.title == 'YouTube' %}
-                                    <i class="fa fa-youtube-play"></i>
-                                {% elsif network.title == 'github' or network.title == 'GitHub' %}
-                                    <i class="fa fa-github"></i>
-                                {% else %}
-                                    <i class="fa fa-{{ network.title | downcase }}"></i>
-                                {% endif %}
-                            </a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <!-- Description / Mission -->
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">
-                    Providing expert simulation and computational consulting for engineering projects across mechanical, biomedical, and aerospace fields.
-                </p>
-            </div>
-        </div>
+<section id="team" class="bg-light-gray py-5">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+        <h3 class="section-subheading text-muted">Engineering simulation and consulting experts</h3>
+      </div>
     </div>
+
+    <!-- Team Members Grid -->
+    <div class="row text-center">
+      {% for member in site.people %}
+      <div class="col-md-4 col-sm-6 mb-5">
+        <div class="team-member">
+          <img src="{{ 'img/team/' | append: member.pic | append: '.jpg' | relative_url }}" 
+               class="mx-auto rounded-circle img-fluid" 
+               alt="{{ member.name }}" 
+               loading="lazy">
+
+          <h4 class="mt-4">{{ member.name }}</h4>
+          <p class="text-muted">{{ member.position }}</p>
+
+          <!-- Social Links -->
+          {% if member.social and member.social.size > 0 %}
+          <ul class="list-inline social-buttons mt-4">
+            {% for network in member.social %}
+            <li class="list-inline-item">
+              <a href="{{ network.url }}" target="_blank" rel="noopener" 
+                 aria-label="{{ network.title | capitalize }}">
+                {% assign icon_name = network.title | downcase %}
+                {% case icon_name %}
+                  {% when 'linkedin' %}
+                    <i class="fab fa-linkedin-in"></i>
+                  {% when 'youtube' %}
+                    <i class="fab fa-youtube"></i>
+                  {% when 'x', 'twitter' %}
+                    <i class="fab fa-x-twitter"></i>
+                  {% when 'github' %}
+                    <i class="fab fa-github"></i>
+                  {% else %}
+                    <i class="fab fa-{{ icon_name }}"></i>
+                {% endcase %}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Team Description -->
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="large text-muted">
+          Providing expert simulation and computational consulting for engineering projects across mechanical, biomedical, and aerospace fields.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
+{% endcomment %}

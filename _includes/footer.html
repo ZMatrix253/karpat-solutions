@@ -1,25 +1,41 @@
 <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">
+                    © {{ site.title }} {{ 'now' | date: "%Y" }}
+                </span>
+            </div>
+
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}" target="_blank" title="{{ network.title | capitalize }}">
+                            {% comment %} Use FA6 brand icons for social links {% endcomment %}
+                            {% if network.title == 'x' or network.title == 'X' %}
+                                <i class="fab fa-x-twitter"></i>
+                            {% elsif network.title == 'linkedin' or network.title == 'LinkedIn' %}
+                                <i class="fab fa-linkedin-in"></i>
+                            {% elsif network.title == 'youtube' or network.title == 'YouTube' %}
+                                <i class="fab fa-youtube"></i>
+                            {% elsif network.title == 'github' or network.title == 'GitHub' %}
+                                <i class="fab fa-github"></i>
+                            {% else %}
+                                <i class="fab fa-{{ network.title | downcase }}"></i>
+                            {% endif %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
