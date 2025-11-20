@@ -3,12 +3,4 @@ nav.navbar-default .navbar-header .navbar-brand {
     font-weight: 700 !important;
 }
 
-/* Navbar link hover */
-.navbar a:hover {
-    color: #1E90FF !important; /* replace with your preferred color */
-}
 
-/* Any other text hover */
-a:hover, .hover-text:hover {
-    color: #1E90FF !important; /* same color for links and highlighted text */
-}
