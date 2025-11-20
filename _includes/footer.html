@@ -2,14 +2,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+                <span class="copyright">
+                    &copy; {{ site.title }} {{ 'now' | date: "%Y" }}
+                </span>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
                     {% for network in site.social %}
                     <li>
                         <a href="{{ network.url }}" target="_blank">
-                            <i class="fa-brands fa-{{ network.title }}"></i>
+                            <i class="fa-brands fa-{{ network.title | downcase }}"></i>
                         </a>
                     </li>
                     {% endfor %}
@@ -24,4 +26,5 @@
         </div>
     </div>
 </footer>
+
 
