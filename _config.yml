@@ -1,6 +1,9 @@
 url: https://karpatsolutions.ca
 baseurl: ""
 
+plugins:
+  - jekyll-sitemap
+
 # Site settings
 title: Karpat Solutions
 logo: "img/logos/karpat-logot.png"  
@@ -40,4 +43,5 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
 
