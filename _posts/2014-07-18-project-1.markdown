@@ -8,20 +8,20 @@ img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
 project-date: 2023
-client: Start Bootstrap
+client: Academic Project
 category: Biomedical Device Design
 description: |
   <div style="text-align: left;">
-  Developed and integrated real-time washout algorithms for the Carleton University Simulator Project (CUSP) using NI LabVIEW and MATLAB. Contributed to control system enhancements for the Atlas flight simulator by modeling flight dynamics and designing strategy-based control algorithms to simulate realistic aircraft motion for pilot training.<br><br>
+  Designed a microfluidic device to replicate osteoporotic bone tissue, enabling research on mechanical and biochemical factors influencing bone regeneration using AutoCAD and ANSYS simulations.<br><br>
 
   <strong>Key contributions included:</strong>
   <ul>
-    <li>Implemented and optimized washout algorithms to accurately replicate motion responses during advanced flight scenarios.</li>
-    <li>Integrated software algorithms with simulator hardware to increase realism and immersion for pilot training.</li>
-    <li>Performed detailed testing and validation to assess system accuracy, stability, and reliability under different simulation conditions.</li>
-    <li>Collaborated with engineering team members using BitBucket for version control, code reviews, and adherence to project standards.</li>
+    <li>Designed the channel layout and features for the microfluidic device, ensuring precise replication of bone tissue conditions affected by osteoporosis.</li>
+    <li>Specified the material selection criteria for the scaffolding component, balancing biocompatibility, mechanical stability, and cost-effectiveness, selecting polycaprolactone (PCL) for the scaffold and polydimethylsiloxane (PDMS) for channels.</li>
+    <li>Analyzed design constraints, address potential risks, and optimize the overall functionality and performance of the microfluidic platform.</li>
+    <li>Incorporated surface modifications such as collagen coating and laser ablation for enhanced cell adhesion, along with biocompatibility considerations and sterilization protocols.</li>
   </ul>
 
-  <strong>Outcome:</strong> Enabled higher simulation realism, supporting pilot skill development and operational preparedness in advanced training environments.
+  <strong>Outcome:</strong> Created a functional microfluidic platform to simulate osteoporosis-affected bone tissue, enabling further experimentation on proteins and hormones like IGF-1 and GLAST for potential advancements in osteoporosis treatment and bone regeneration research.
   </div>
 ---
