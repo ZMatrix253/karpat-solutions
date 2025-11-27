@@ -93,18 +93,17 @@ nav.navbar-default .navbar-header .navbar-brand {
     font-size: 13px;
 }
 
-/* Add spacing between About Me image and text on mobile */
-@media (max-width: 767px) {
-    #about .col-md-8 {
-        margin-top: 20px; /* Adjust value as needed */
-    }
-}
-
 
 .social-icons-spacing {
     margin-top: 60px; /* adjust as needed */
     margin-bottom: 0;
 }
 
+/* Add spacing between About Me image and text on mobile */
+@media (max-width: 767px) {
+    #about .row.align-items-center > .col-md-8 {
+        margin-top: 20px !important; /* force the spacing */
+    }
+}
 
 
