@@ -18,7 +18,7 @@ description: |
     <li>&#8226; Implemented and optimized washout algorithms to accurately replicate motion responses during advanced flight scenarios.</li>
     <li>&#8226; Integrated software algorithms with simulator hardware to increase realism and immersion for pilot training.</li>
     <li>&#8226; Performed detailed testing and validation to assess system accuracy, stability, and reliability under different simulation conditions.</li>
-   Collaborated with engineering team members using BitBucket for version control, code reviews, and adherence to project standards.
+   <li>Collaborated with engineering team members using BitBucket for version control, code reviews, and adherence to project standards.</li>
   </ul>
 
   Outcome: Enabled higher simulation realism, supporting pilot skill development and operational preparedness in advanced training environments.
