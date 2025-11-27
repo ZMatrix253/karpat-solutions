@@ -7,8 +7,6 @@ date: 2014-07-18
 img: microfluidicdevicedesign1.png
 thumbnail: microfluidicdevicedesign1-thumbnail.png
 alt: image-alt
-project-date: 2023
-client: Academic Project
 category: Biomedical Device Design
 description: |
   <div style="text-align: left;">
