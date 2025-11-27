@@ -11,18 +11,17 @@ project-date: 2023
 client: Start Bootstrap
 category: Biomedical Device Design
 description: |
-  Designed a microfluidic device to replicate osteoporotic bone tissue, enabling research on mechanical and biochemical factors influencing bone regeneration using AutoCAD and ANSYS simulations.
+  <div style="text-align: left;">
+  Developed and integrated real-time washout algorithms for the Carleton University Simulator Project (CUSP) using NI LabVIEW and MATLAB. Contributed to control system enhancements for the Atlas flight simulator by modeling flight dynamics and designing strategy-based control algorithms to simulate realistic aircraft motion for pilot training.<br><br>
 
-  **Key contributions included:**
-  - Developed precise channel layouts to accurately replicate bone tissue affected by osteoporosis.
-  - Specified scaffold materials balancing biocompatibility, mechanical stability, and cost-effectiveness.
-  - Collaborated with team members to optimize device performance, mitigate risks, and ensure experimental reliability.
+  <strong>Key contributions included:</strong>
+  <ul>
+    <li>Implemented and optimized washout algorithms to accurately replicate motion responses during advanced flight scenarios.</li>
+    <li>Integrated software algorithms with simulator hardware to increase realism and immersion for pilot training.</li>
+    <li>Performed detailed testing and validation to assess system accuracy, stability, and reliability under different simulation conditions.</li>
+    <li>Collaborated with engineering team members using BitBucket for version control, code reviews, and adherence to project standards.</li>
+  </ul>
 
-  **Technical Specifications:**
-  - Channel diameters: 0.43 mm (inlet/outlet), 0.31 mm (within scaffold)
-  - Device dimensions: 25.69 mm × 11.39 mm × 0.43 mm; scaffold: 12.47 mm × 9.03 mm, detachable
-  - Materials: PCL (scaffold) for biocompatibility and mechanical support; PDMS (channels & ports) for flexibility and cost-effectiveness
-  - Surface modifications: Collagen coating for biomimicry, laser ablation for surface roughness; sterilized via autoclaving
-
-  **Outcome:** Produced a functional, biocompatible microfluidic device supporting experimental studies on osteoporotic bone tissue and cellular recovery mechanisms such as IGF-1 and GLAST signaling.
+  <strong>Outcome:</strong> Enabled higher simulation realism, supporting pilot skill development and operational preparedness in advanced training environments.
+  </div>
 ---
