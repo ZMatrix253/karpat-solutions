@@ -4,7 +4,7 @@ subtitle: Microfluidic Channel & Scaffold Development
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: dreams.png
+img: microfluidicdevicedesign1.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
 project-date: 2023
