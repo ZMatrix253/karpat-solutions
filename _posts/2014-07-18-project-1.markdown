@@ -5,7 +5,7 @@ layout: default
 modal-id: 1
 date: 2014-07-18
 img: microfluidicdevicedesign1.png
-thumbnail: dreams-thumbnail.png
+thumbnail: microfluidicdevicedesign1-thumbnail.png
 alt: image-alt
 project-date: 2023
 client: Academic Project
