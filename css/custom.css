@@ -104,3 +104,9 @@ nav.navbar-default .navbar-header .navbar-brand {
     text-align: left !important;
 }
 
+@media (max-width: 767px) {
+    #about .col-md-4 {
+        margin-bottom: 30px !important; /* Increase spacing between image and text */
+    }
+}
+
