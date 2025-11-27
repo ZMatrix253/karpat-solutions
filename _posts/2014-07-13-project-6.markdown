@@ -11,7 +11,7 @@ project-date: 2023-2024
 client: Carleton University
 category: Systems Engineering and Testing
 description: |
-  Developed and integrated real-time washout algorithms for the Carleton University Simulator Project (CUSP) using NI LabVIEW and MATLAB. Contributed to control system enhancements for the Atlas flight simulator by modeling flight dynamics and designing strategy-based control algorithms to simulate realistic aircraft motion for pilot training.
+  Developed and integrated real-time washout algorithms for the Carleton University Simulator Project (CUSP) using NI LabVIEW and MATLAB. Contributed to control system enhancements for the Atlas flight simulator by modeling flight dynamics and designing strategy-based control algorithms to simulate realistic aircraft motion for pilot training.<br><br>
 
   Key contributions included:
   <ul>
