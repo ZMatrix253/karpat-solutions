@@ -14,11 +14,12 @@ description: |
   Developed and integrated real-time washout algorithms for the Carleton University Simulator Project (CUSP) using NI LabVIEW and MATLAB. Contributed to control system enhancements for the Atlas flight simulator by modeling flight dynamics and designing strategy-based control algorithms to simulate realistic aircraft motion for pilot training.
 
   Key contributions included:
-
-  - Implemented and optimized washout algorithms to accurately replicate motion responses during advanced flight scenarios.
-  - Integrated software algorithms with simulator hardware to increase realism and immersion for pilot training.
-  - Performed detailed testing and validation to assess system accuracy, stability, and reliability under different simulation conditions.
-  - Collaborated with engineering team members using BitBucket for version control, code reviews, and adherence to project standards.
+  <ul>
+    <li>&#8226; Implemented and optimized washout algorithms to accurately replicate motion responses during advanced flight scenarios.</li>
+    <li>&#8226; Integrated software algorithms with simulator hardware to increase realism and immersion for pilot training.</li>
+    <li>&#8226; Performed detailed testing and validation to assess system accuracy, stability, and reliability under different simulation conditions.</li>
+    <li>&#8226; Collaborated with engineering team members using BitBucket for version control, code reviews, and adherence to project standards.</li>
+  </ul>
 
   Outcome: Enabled higher simulation realism, supporting pilot skill development and operational preparedness in advanced training environments.
 
