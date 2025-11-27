@@ -98,3 +98,9 @@ nav.navbar-default .navbar-header .navbar-brand {
     text-align: left !important;
 }
 
+/* Left-align ALL text inside the project description */
+.portfolio-modal .modal-body p,
+.portfolio-modal .modal-body {
+    text-align: left !important;
+}
+
