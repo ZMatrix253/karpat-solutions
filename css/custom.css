@@ -93,6 +93,10 @@ nav.navbar-default .navbar-header .navbar-brand {
     font-size: 13px;
 }
 
+.social-icons-spacing {
+    margin-top: 60px; /* adjust as needed */
+    margin-bottom: 0;
+}
 
 
 
