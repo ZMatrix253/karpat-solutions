@@ -21,6 +21,6 @@ description: |
    <li>Collaborated with engineering team members using BitBucket for version control, code reviews, and adherence to project standards.</li>
   </ul>
 
-  Outcome: Enabled higher simulation realism, supporting pilot skill development and operational preparedness in advanced training environments.
+  <ul>Outcome: Enabled higher simulation realism, supporting pilot skill development and operational preparedness in advanced training environments.</ul>
 
 ---
