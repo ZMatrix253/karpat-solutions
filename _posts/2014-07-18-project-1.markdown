@@ -1,29 +1,15 @@
 ---
-title: Osteoporosis Microfluidic Device Design
-subtitle: Microfluidic Channel & Scaffold Development
+title: Dreams
+subtitle: Website Design
 layout: default
 modal-id: 1
-date: 2023
+date: 2014-07-18
 img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
-project-date: August 2023
+project-date: April 2014
 client: Start Bootstrap
-category: Biomedical Device Design
-description: |
-  Designed a microfluidic device to replicate osteoporotic bone tissue, enabling research on mechanical and biochemical factors influencing bone regeneration using AutoCAD and ANSYS simulations.
-
-  **Key contributions included:**
-  - Developed precise channel layouts to accurately replicate bone tissue affected by osteoporosis.
-  - Specified scaffold materials balancing biocompatibility, mechanical stability, and cost-effectiveness.
-  - Collaborated with team members to optimize device performance, mitigate risks, and ensure experimental reliability.
-
-  **Technical Specifications:**
-  - Channel diameters: 0.43 mm (inlet/outlet), 0.31 mm (within scaffold)
-  - Device dimensions: 25.69 mm × 11.39 mm × 0.43 mm; scaffold: 12.47 mm × 9.03 mm, detachable
-  - Materials: PCL (scaffold) for biocompatibility and mechanical support; PDMS (channels & ports) for flexibility and cost-effectiveness
-  - Surface modifications: Collagen coating for biomimicry, laser ablation for surface roughness; sterilized via autoclaving
-
-  **Outcome:** Produced a functional, biocompatible microfluidic device supporting experimental studies on osteoporotic bone tissue and cellular recovery mechanisms such as IGF-1 and GLAST signaling.
+category: Web Development
+description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
 
 ---
