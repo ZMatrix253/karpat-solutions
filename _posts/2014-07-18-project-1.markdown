@@ -7,7 +7,7 @@ date: 2014-07-18
 img: microfluidicdevicedesign1.png
 thumbnail: microfluidicdevicedesign1-thumbnail.png
 alt: image-alt
-category: Biomedical Device Design
+category: Biomedical Engineering & Microfluidics
 description: |
   <div style="text-align: left;">
   Designed a microfluidic device to replicate osteoporotic bone tissue, enabling research on mechanical and biochemical factors influencing bone regeneration using AutoCAD and ANSYS simulations.<br><br>
