@@ -7,7 +7,7 @@ date: 2014-07-16
 img: HVAC-Optimization.png
 thumbnail: HVAC-thumbnail.png
 alt: image-alt
-category: Mechanical Engineering & Energy Efficiency
+category: Mechanical Engineering & Energy Systems
 description: |
   <div style="text-align: left;">
   Conducted a comprehensive energy audit and utilized ANSYS and MATLAB to model and simulate HVAC system performance, identifying opportunities for optimization to reduce energy consumption, operational costs, and environmental impact.<br><br>
