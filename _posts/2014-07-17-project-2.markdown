@@ -4,8 +4,8 @@ subtitle: ANSYS CFX Modeling and Simulation
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: escape.png
-thumbnail: escape-thumbnail.png
+img: stenosis carotid artery CFX.png
+thumbnail: carotid-stenosis-thumbnail.png
 alt: image-alt
 category: Biomedical Engineering & Fluid Dynamics
 description: |
