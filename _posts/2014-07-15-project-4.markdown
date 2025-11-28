@@ -8,6 +8,19 @@ img: treehouse.png
 thumbnail: treehouse-thumbnail.png
 alt: image-alt
 category: Biomedical Engineering & Medical Devices
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: |
+  <div style="text-align: left;">
+  Designed a medical mask device to treat Obstructive Sleep Apnea (OSA), a common sleep disorder involving upper airway obstruction, by maintaining airway patency through optimized airflow, comfort, durability, and portability using AutoCAD and ANSYS simulations.
+
+  <strong>Key contributions included:</strong>
+  <ul>
+    <li>Developed design inputs focused on maintaining airway patency with airflow rates of 4-20 L/min, incorporating adjustable features like nasal pillows and advanced airflow management to prevent apnea episodes.</li>
+    <li>Prioritized patient comfort by using soft, hypoallergenic materials such as medical-grade silicone and silastic gel, with mask dimensions tailored to average facial sizes (120-140 mm vertical, 110-150 mm horizontal) and ergonomic elements to reduce pressure points.</li>
+    <li>Ensured durability through material selection like Lexan polycarbonate, meeting bending stress requirements of 100-300 MPa, and conducted testing under real-world conditions to validate structural integrity.</li>
+    <li>Optimized portability with a lightweight design (50-200 g target, achieved 187 g) and compact features for easy travel and storage, adhering to standards like ASTM F2100 for material performance.</li>
+  </ul>  <strong>Outcome:</strong> Created a functional OSA mask device that exceeds airflow requirements (up to 67.2 L/min), fits comfortably on average facial anatomy, withstands daily stresses, and supports patient adherence, potentially advancing treatment options alongside therapies like CPAP, ASV, EPAP, and upper airway stimulation.
+  </div>
+
+
 
 ---
