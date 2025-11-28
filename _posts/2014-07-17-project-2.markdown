@@ -1,5 +1,5 @@
 ---
-title: Escape
+title: Carotid Artery Stenosis Research and Simulation
 subtitle: Website Design
 layout: default
 modal-id: 2
