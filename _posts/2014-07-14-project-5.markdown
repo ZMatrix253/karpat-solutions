@@ -1,15 +1,26 @@
 ---
-title: Startup Framework
-subtitle: Website Design
+title: Pop-Can Crusher Design and Optimization
+subtitle: Reverse Engineering and Manufacturing Process 
 layout: default
 modal-id: 5
 date: 2014-07-14
 img: startup-framework.png
 thumbnail: startup-framework-thumbnail.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+category: Mechanical Engineering & Manufacturing
+description: |
+  <div style="text-align: left;">
+  Led the design and optimization of a pop-can crusher through reverse engineering, utilizing CAD and CAM software to enhance functionality, assembly, and machining processes while adhering to ASME standards.
+
+  <strong>Key contributions included:</strong>
+  <ul>
+    <li>Conducted systematic visual inspections, precise measurements, and disassembly of the pop-can crusher to gain a comprehensive understanding of the existing design.</li>
+    <li>Utilized CAD modeling to create accurate 3D representations, considering functionality, assembly, machining processes, and fit requirements for improved design reliability.</li>
+    <li>Maintained consistency in part dimensions using the ASME Y14.5M-1994 standard, enhancing ease of assembly and overall product quality.</li>
+    <li>Employed CAM software to import CAD models, define machining operations, generate tool paths, and optimize processes for accuracy and adherence to design specifications.</li>
+  </ul>  <strong>Outcome:</strong> Developed an optimized pop-can crusher design with enhanced manufacturing efficiency, precision, and reliability, facilitating improved production processes and potential cost reductions in fabrication.
+  </div>
+
+
 
 ---
