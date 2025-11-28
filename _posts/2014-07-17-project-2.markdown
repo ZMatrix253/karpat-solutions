@@ -1,5 +1,5 @@
 ---
-title: Carotid Artery Stenosis Research and Simulation
+title: Carotid Artery Stenosis Simulation
 subtitle: ANSYS CFX Modeling and Simulation
 layout: default
 modal-id: 2
