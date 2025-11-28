@@ -19,8 +19,8 @@ description: |
     <li>Integrated MATLAB for predictive algorithms and control system simulations, optimizing variable air volume (VAV) systems and temperature setpoints under different operating conditions like occupancy levels and external weather variations.</li>
     <li>Proposed modifications including upgraded insulation, variable speed drives for fans and pumps, and smart thermostats; calculated potential energy savings (estimated 20-30%) and return on investment (ROI) for each using MATLAB scripts and Excel-based financial models.</li>
     <li>Assessed environmental impact reductions, such as lowered CO2 emissions, and ensured compliance with energy standards like ASHRAE guidelines through iterative simulations.</li>
-  </ul>  <strong>Outcome:</strong> Identified actionable optimizations leading to projected annual energy savings of up to 25%, with ROIs ranging from 2-5 years, promoting sustainable building operations and providing a scalable framework for future HVAC retrofits.
+  </ul>  
+  
+  <strong>Outcome:</strong> Identified actionable optimizations leading to projected annual energy savings of up to 25%, with ROIs ranging from 2-5 years, promoting sustainable building operations and providing a scalable framework for future HVAC retrofits.
   </div>
-
-
 ---
