@@ -10,7 +10,7 @@ alt: image-alt
 category: Mechanical Engineering & Manufacturing
 description: |
   <div style="text-align: left;">
-  Led the design and optimization of a pop-can crusher through reverse engineering, utilizing CAD and CAM software to enhance functionality, assembly, and machining processes while adhering to ASME standards.
+  Led the design and optimization of a pop-can crusher through reverse engineering, utilizing CAD and CAM software to enhance functionality, assembly, and machining processes while adhering to ASME standards.<br><br>
 
   <strong>Key contributions included:</strong>
   <ul>
@@ -18,7 +18,8 @@ description: |
     <li>Utilized CAD modeling to create accurate 3D representations, considering functionality, assembly, machining processes, and fit requirements for improved design reliability.</li>
     <li>Maintained consistency in part dimensions using the ASME Y14.5M-1994 standard, enhancing ease of assembly and overall product quality.</li>
     <li>Employed CAM software to import CAD models, define machining operations, generate tool paths, and optimize processes for accuracy and adherence to design specifications.</li>
-  </ul>  <strong>Outcome:</strong> Developed an optimized pop-can crusher design with enhanced manufacturing efficiency, precision, and reliability, facilitating improved production processes and potential cost reductions in fabrication.
+  </ul>  
+  <strong>Outcome:</strong> Developed an optimized pop-can crusher design with enhanced manufacturing efficiency, precision, and reliability, facilitating improved production processes and potential cost reductions in fabrication.
   </div>
 
 
