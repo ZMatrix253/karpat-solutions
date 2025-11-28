@@ -10,7 +10,7 @@ alt: image-alt
 category: Mechanical Engineering & Energy Efficiency
 description: |
   <div style="text-align: left;">
-  Conducted a comprehensive energy audit and utilized ANSYS and MATLAB to model and simulate HVAC system performance, identifying opportunities for optimization to reduce energy consumption, operational costs, and environmental impact.
+  Conducted a comprehensive energy audit and utilized ANSYS and MATLAB to model and simulate HVAC system performance, identifying opportunities for optimization to reduce energy consumption, operational costs, and environmental impact.<br><br>
 
   <strong>Key contributions included:</strong>
   <ul>
