@@ -4,8 +4,8 @@ subtitle: Medical Device for Upper Airway Patency
 layout: default
 modal-id: 4
 date: 2014-07-15
-img: treehouse.png
-thumbnail: treehouse-thumbnail.png
+img: OSAmaskdesign.png
+thumbnail: OSAmaskdesign-thumbnail.png
 alt: image-alt
 category: Biomedical Engineering & Medical Devices
 description: |
