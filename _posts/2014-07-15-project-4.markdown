@@ -18,7 +18,8 @@ description: |
     <li>Prioritized patient comfort by using soft, hypoallergenic materials such as medical-grade silicone and silastic gel, with mask dimensions tailored to average facial sizes (120-140 mm vertical, 110-150 mm horizontal) and ergonomic elements to reduce pressure points.</li>
     <li>Ensured durability through material selection like Lexan polycarbonate, meeting bending stress requirements of 100-300 MPa, and conducted testing under real-world conditions to validate structural integrity.</li>
     <li>Optimized portability with a lightweight design (50-200 g target, achieved 187 g) and compact features for easy travel and storage, adhering to standards like ASTM F2100 for material performance.</li>
-  </ul>  <strong>Outcome:</strong> Created a functional OSA mask device that exceeds airflow requirements (up to 67.2 L/min), fits comfortably on average facial anatomy, withstands daily stresses, and supports patient adherence, potentially advancing treatment options alongside therapies like CPAP, ASV, EPAP, and upper airway stimulation.
+  </ul>  
+  <strong>Outcome:</strong> Created a functional OSA mask device that exceeds airflow requirements (up to 67.2 L/min), fits comfortably on average facial anatomy, withstands daily stresses, and supports patient adherence, potentially advancing treatment options alongside therapies like CPAP, ASV, EPAP, and upper airway stimulation.
   </div>
 
 
