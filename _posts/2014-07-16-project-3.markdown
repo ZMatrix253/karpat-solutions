@@ -4,8 +4,8 @@ subtitle: Energy Audit and Efficiency Simulation
 layout: default
 modal-id: 3
 date: 2014-07-16
-img: golden.png
-thumbnail: golden-thumbnail.png
+img: HVAC-Optimization.png
+thumbnail: HVAC-thumbnail.png
 alt: image-alt
 category: Mechanical Engineering & Energy Efficiency
 description: |
