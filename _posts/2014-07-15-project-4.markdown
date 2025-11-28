@@ -1,6 +1,6 @@
 ---
 title: Obstructive Sleep Apnea (OSA) Mask Design
-subtitle: Website Design
+subtitle: Medical Device for Upper Airway Patency 
 layout: default
 modal-id: 4
 date: 2014-07-15
