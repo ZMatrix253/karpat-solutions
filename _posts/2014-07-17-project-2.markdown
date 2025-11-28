@@ -8,6 +8,17 @@ img: escape.png
 thumbnail: escape-thumbnail.png
 alt: image-alt
 category: Biomedical Engineering & Fluid Dynamics
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: |
+  <div style="text-align: left;">
+  Utilized ANSYS CFX to model realistic dimensions of healthy and stenosed carotid arteries, simulating fluid flow to analyze pressure, total pressure, and velocity distributions, providing insights into the impact of stenosis on blood flow dynamics.
 
+  <strong>Key contributions included:</strong>
+  <ul>
+    <li>Modeled healthy and unhealthy carotid arteries using Fusion 360 with accurate dimensions from research (CCA: 6.52 mm, ICA: 4.66 mm, ECA: 4.2 mm), incorporating a narrowed passage of 2.6 mm in the stenosed model.</li>
+    <li>Set up mesh generation with refined parameters (element size: 0.0008 m, maximum size: 0.002 m, inflation layers: 5) and boundary conditions, including inlet mass flow rate of 0.007209 kg/s and outlet static pressure of 116.2 mm Hg.</li>
+    <li>Configured simulation setup in ANSYS Workbench, selecting water as the fluid, no heat transfer, and shear stress turbulence model for accurate fluid flow representation.</li>
+    <li>Interpreted contour plots of pressure, total pressure, and velocity to identify increased pressure (up to 1.555 × 10^4 Pa) and velocity (up to 48.2 m/s) in the stenosed region compared to the healthy artery.</li>
+  </ul>  <strong>Outcome:</strong> Successfully demonstrated through simulations how carotid artery stenosis leads to elevated pressure and accelerated blood flow in narrowed regions, highlighting risks such as stroke and validating ANSYS as a tool for accurate hemodynamic analysis.
+  </div>
+  
 ---
