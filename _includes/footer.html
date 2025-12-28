@@ -13,7 +13,7 @@
                     <li>
                         <a href="{{ network.url }}" target="_blank" title="{{ network.title | capitalize }}">
                             {% comment %} Use FA6 brand icons for social links {% endcomment %}
-                            {% elsif network.title == 'linkedin' or network.title == 'LinkedIn' %}
+                            {% if network.title == 'linkedin' or network.title == 'LinkedIn' %}
                                 <i class="fab fa-linkedin-in"></i>
                             {% elsif network.title == 'youtube' or network.title == 'YouTube' %}
                                 <i class="fab fa-youtube"></i>
