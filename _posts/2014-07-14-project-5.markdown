@@ -8,6 +8,7 @@ img: popcan crusher2.png
 thumbnail: popcan crusher thumbnail.png
 alt: image-alt
 category: Mechanical Engineering & Manufacturing
+project-type: academic
 description: |
   <div style="text-align: left;">
   Led the design and optimization of a pop-can crusher through reverse engineering, utilizing CAD and CAM software to enhance functionality, assembly, and machining processes while adhering to ASME standards.<br><br>

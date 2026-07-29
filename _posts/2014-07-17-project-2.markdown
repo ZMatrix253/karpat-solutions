@@ -8,6 +8,7 @@ img: stenosis carotid artery CFX.png
 thumbnail: carotid-stenosis-thumbnail.png
 alt: image-alt
 category: Biomedical Engineering & Fluid Dynamics
+project-type: academic
 description: |
   <div style="text-align: left;">
   Utilized ANSYS CFX to model realistic dimensions of healthy and stenosed carotid arteries, simulating fluid flow to analyze pressure, total pressure, and velocity distributions, providing insights into the impact of stenosis on blood flow dynamics.<br><br>

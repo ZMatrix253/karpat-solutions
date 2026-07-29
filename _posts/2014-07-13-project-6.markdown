@@ -8,6 +8,7 @@ img: flightsimulator.png
 thumbnail: flightsimulator-thumbnail.png
 alt: image-alt
 category: Systems Engineering and Testing
+project-type: academic
 description: |
   <div style="text-align: left;">
   Developed and integrated real-time washout algorithms for the Carleton University Simulator Project (CUSP) using NI LabVIEW and MATLAB. Contributed to control system enhancements for the Atlas flight simulator by modeling flight dynamics and designing strategy-based control algorithms to simulate realistic aircraft motion for pilot training.<br><br>

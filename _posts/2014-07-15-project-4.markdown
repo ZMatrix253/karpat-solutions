@@ -8,6 +8,7 @@ img: OSAmaskdesign.png
 thumbnail: OSAmaskdesign-thumbnail.png
 alt: image-alt
 category: Biomedical Engineering & Medical Devices
+project-type: academic
 description: |
   <div style="text-align: left;">
   Designed a medical mask device to treat Obstructive Sleep Apnea (OSA), a common sleep disorder involving upper airway obstruction, by maintaining airway patency through optimized airflow, comfort, durability, and portability using AutoCAD and ANSYS simulations.<br><br>
