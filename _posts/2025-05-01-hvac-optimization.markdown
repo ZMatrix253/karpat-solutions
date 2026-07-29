@@ -1,5 +1,5 @@
 ---
-title: HVAC System Optimization
+title: HVAC System Optimization & Energy Simulation Tool
 subtitle: Energy Audit and Efficiency Simulation
 layout: default
 modal-id: 7

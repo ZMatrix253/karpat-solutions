@@ -1,6 +1,6 @@
 ---
-title: HVAC System Optimization
-subtitle: Energy Audit and Efficiency Simulation
+title: HVAC System Performance Optimization
+subtitle: CFD Simulation and Predictive Control Analysis
 layout: default
 modal-id: 3
 date: 2014-07-16
