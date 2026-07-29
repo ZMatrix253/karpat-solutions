@@ -1,28 +1,28 @@
 ---
 title: HVAC System Optimization & Energy Simulation Tool
-subtitle: Energy Audit and Efficiency Simulation
+subtitle: Energy Modeling, Retrofit Analysis & Decision Support
 layout: default
 modal-id: 7
 date: 2025-05-01
-img: hvac-optimization1.png          # put your large image here
-thumbnail: hvac-thumbnail1.png       # put your thumbnail here
-alt: HVAC energy optimization project
+img: hvac-optimization1.png
+thumbnail: hvac-thumbnail1.png
+alt: HVAC energy optimization and simulation tool
 category: Energy Modeling & Simulation
 project-type: client
 client: Commercial Office Building, Ottawa
 project-date: 2025
 description: |
   <div style="text-align: left;">
-  Developed a full-year Python-based building energy model for a commercial office building in Ottawa to evaluate HVAC retrofit options, energy consumption, costs, and CO₂ emissions.<br><br>
+  Developed a complete Python-based building energy modeling tool for a commercial office building in Ottawa to evaluate annual HVAC energy consumption, operating costs, and CO₂ emissions. The tool supports practical retrofit analysis using real weather data, realistic equipment behavior, and robust decision-support methods.<br><br>
 
-  <strong>Key features:</strong>
+  <strong>Key contributions included:</strong>
   <ul>
-    <li>Real Ottawa TMYx weather data with physics-based heating, cooling, solar, and internal loads</li>
-    <li>Six practical retrofit scenarios (VFDs, high-efficiency chiller, LED lighting, economizer + DCV, etc.)</li>
-    <li>Monte Carlo uncertainty analysis (5,000 runs), sensitivity analysis, and SciPy parametric optimization</li>
-    <li>Validated against ASHRAE Great Energy Predictor III meter data (−0.4% annual difference)</li>
+    <li>Built a physics-based simulation engine using real Ottawa TMYx weather data with detailed heating, cooling, solar, and internal load calculations.</li>
+    <li>Modeled modular HVAC components with realistic part-load efficiency curves and evaluated six practical retrofit scenarios (VFDs, high-efficiency chiller, LED lighting, economizer + DCV, etc.).</li>
+    <li>Implemented advanced analytics including sensitivity analysis, Monte Carlo uncertainty quantification (5,000 runs), and SciPy parametric optimization.</li>
+    <li>Generated an automated professional PDF report containing executive summary, results tables, and visualizations for clear client decision support.</li>
   </ul>
 
-  <strong>Best result:</strong> Combined measures delivered <strong>18.2% energy reduction</strong>, $13,896 annual savings, 3.6-year payback, and 57.9 t CO₂ reduction.
+  <strong>Outcome:</strong> Delivered quantified retrofit recommendations showing up to 18.2% energy reduction, $13,896 annual savings, 3.6-year simple payback, and 57.9 tonnes CO₂ reduction, with the model benchmarked against ASHRAE Great Energy Predictor III meter data.
   </div>
 ---
