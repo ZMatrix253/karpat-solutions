@@ -1,6 +1,6 @@
 ---
 title: HVAC System Optimization & Energy Simulation Tool
-subtitle: Energy Modeling, Retrofit Analysis & Decision Support
+subtitle: Energy Modeling & Retrofit Analysis
 layout: default
 modal-id: 7
 date: 2025-05-01
